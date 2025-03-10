@@ -1,3 +1,12 @@
+window.addEventListener('message', function(event) {
+    if (event.data.includes('formResponse')) {
+        // O formulário foi enviado
+        alert('Obrigado! Sua mensagem foi enviada com sucesso.');
+        // Ou você pode atualizar um elemento na página:
+        // document.getElementById('mensagem-sucesso').style.display = 'block';
+    }
+});
+
 // Função para validação do formulário
 function validarFormulario(event) {
     event.preventDefault();
